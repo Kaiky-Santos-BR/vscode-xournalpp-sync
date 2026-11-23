@@ -7,7 +7,7 @@
 
 **Seamless integration between Xournal++ and VS Code** — Automatic PDF export, quick actions, and a notes explorer. Inspired by the [Obsidian Xournal++ plugin](https://github.com/jonjampen/obsidian-xournalpp).
 
-**Author:** [Kaiky Vinicius dos Santos](https://github.com/kaikyvinicius)
+**Author:** [Kaiky Vinicius dos Santos](https://github.com/Kaiky-Santos-BR)
 
 ---
 
