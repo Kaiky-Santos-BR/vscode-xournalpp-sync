@@ -1,0 +1,214 @@
+{
+  "name": "vscode-xournalpp-sync",
+  "displayName": "Xournal++ Sync",
+  "description": "Sync Xournal++ notes (.xopp) with PDF for viewing in VS Code. Auto-export on save, open in Xournal++, create new notes, search, rename, delete.",
+  "version": "1.0.0",
+  "publisher": "kaikyvinicius",
+  "author": {
+    "name": "Kaiky Vinicius dos Santos",
+    "email": "kaikyvinicius@example.com",
+    "url": "https://github.com/kaikyvinicius"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaikyvinicius/vscode-xournalpp-sync"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "keywords": [
+    "xournalpp",
+    "xopp",
+    "handwriting",
+    "notes",
+    "pdf",
+    "annotation",
+    "sync"
+  ],
+  "icon": "media/icon.png",
+  "license": "MIT",
+  "activationEvents": [
+    "onStartupFinished",
+    "workspaceContains:**/*.xopp"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xournalpp.openInXournalpp",
+        "title": "Open in Xournal++",
+        "category": "Xournal++",
+        "icon": "$(edit)"
+      },
+      {
+        "command": "xournalpp.createNewNote",
+        "title": "Create New Note",
+        "category": "Xournal++",
+        "icon": "$(add)"
+      },
+      {
+        "command": "xournalpp.exportToPdf",
+        "title": "Export to PDF",
+        "category": "Xournal++",
+        "icon": "$(file-code)"
+      },
+      {
+        "command": "xournalpp.exportAllToPdf",
+        "title": "Export All Notes to PDF",
+        "category": "Xournal++",
+        "icon": "$(file-code)"
+      },
+      {
+        "command": "xournalpp.searchAndOpen",
+        "title": "Search and Open Note",
+        "category": "Xournal++",
+        "icon": "$(search)"
+      },
+      {
+        "command": "xournalpp.renameNote",
+        "title": "Rename Note (XOPP + PDF)",
+        "category": "Xournal++",
+        "icon": "$(symbol-rename)"
+      },
+      {
+        "command": "xournalpp.deleteNote",
+        "title": "Delete Note (XOPP + PDF)",
+        "category": "Xournal++",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "xournalpp.openPdf",
+        "title": "Open Corresponding PDF",
+        "category": "Xournal++",
+        "icon": "$(preview)"
+      },
+      {
+        "command": "xournalpp.configurePath",
+        "title": "Configure Xournal++ Path",
+        "category": "Xournal++",
+        "icon": "$(gear)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceExtname == .xopp",
+          "command": "xournalpp.openInXournalpp",
+          "group": "navigation@1"
+        },
+        {
+          "when": "resourceExtname == .xopp",
+          "command": "xournalpp.openPdf",
+          "group": "navigation@2"
+        },
+        {
+          "when": "resourceExtname == .xopp",
+          "command": "xournalpp.exportToPdf",
+          "group": "navigation@3"
+        },
+        {
+          "when": "resourceExtname == .xopp",
+          "command": "xournalpp.renameNote",
+          "group": "navigation@4"
+        },
+        {
+          "when": "resourceExtname == .xopp",
+          "command": "xournalpp.deleteNote",
+          "group": "navigation@5"
+        },
+        {
+          "when": "resourceExtname == .pdf",
+          "command": "xournalpp.openInXournalpp",
+          "group": "navigation@1"
+        }
+      ],
+      "commandPalette": [
+        { "command": "xournalpp.openInXournalpp" },
+        { "command": "xournalpp.createNewNote" },
+        { "command": "xournalpp.exportToPdf" },
+        { "command": "xournalpp.exportAllToPdf" },
+        { "command": "xournalpp.searchAndOpen" },
+        { "command": "xournalpp.renameNote" },
+        { "command": "xournalpp.deleteNote" },
+        { "command": "xournalpp.openPdf" },
+        { "command": "xournalpp.configurePath" }
+      ]
+    },
+    "configuration": {
+      "title": "Xournal++ Sync",
+      "properties": {
+        "xournalpp.sync.executablePath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to Xournal++ executable. Leave empty to auto-detect from PATH or default install locations."
+        },
+        "xournalpp.sync.autoExportOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically export .xopp to PDF when file is saved."
+        },
+        "xournalpp.sync.autoExportOnCreate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Export to PDF when creating new .xopp file."
+        },
+        "xournalpp.sync.exportNoRuling": {
+          "type": "boolean",
+          "default": false,
+          "description": "Export PDF without ruling/grid lines (--export-no-ruling flag)."
+        },
+        "xournalpp.sync.exportNoBackground": {
+          "type": "boolean",
+          "default": false,
+          "description": "Export PDF without background PDF (--export-no-background flag)."
+        },
+        "xournalpp.sync.templatePath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to default .xopp template file for new notes."
+        },
+        "xournalpp.sync.defaultFolder": {
+          "type": "string",
+          "default": "",
+          "description": "Default folder for new notes (relative to workspace root)."
+        },
+        "xournalpp.sync.notifications": {
+          "type": "string",
+          "enum": ["all", "errors", "none"],
+          "default": "errors",
+          "description": "Notification level for export operations."
+        }
+      }
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "xournalpp.notesView",
+          "name": "Xournal++ Notes",
+          "when": "workspaceContains:**/*.xopp"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "typescript": "^5.0.0",
+    "vsce": "^2.15.0"
+  }
+}
