@@ -3,7 +3,7 @@
   "displayName": "Xournal++ Sync",
   "description": "Sync Xournal++ notes (.xopp) with PDF for viewing in VS Code. Auto-export on save, open in Xournal++, create new notes, search, rename, delete.",
   "version": "1.0.0",
-  "publisher": "kaikyvinicius",
+  "publisher": "KaikySantosBR",
   "author": {
     "name": "Kaiky Vinicius dos Santos",
     "email": "kaikyvinicius@example.com",
@@ -189,7 +189,7 @@
         {
           "id": "xournalpp.notesView",
           "name": "Xournal++ Notes",
-          "when": "workspaceContains:**/*.xopp"
+          "icon": "media/icon.svg"
         }
       ]
     }
