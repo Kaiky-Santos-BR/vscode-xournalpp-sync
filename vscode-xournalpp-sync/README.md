@@ -7,7 +7,7 @@
 
 **Seamless integration between Xournal++ and VS Code** — Automatic PDF export, quick actions, and a notes explorer. Inspired by the [Obsidian Xournal++ plugin](https://github.com/jonjampen/obsidian-xournalpp).
 
-**Author:** [Kaiky Vinicius dos Santos](https://github.com/kaikyvinicius)
+**Author:** [Kaiky Vinicius dos Santos](https://github.com/Kaiky-Santos-BR)
 
 ---
 
@@ -220,7 +220,7 @@ npm run compile
 - **Xournal++** — Amazing handwriting app by [xournalpp/xournalpp](https://github.com/xournalpp/xournalpp)
 - **Obsidian Xournal++ Plugin** — Inspiration by [jonjampen/obsidian-xournalpp](https://github.com/jonjampen/obsidian-xournalpp)
 - **VS Code Extension API** — By Microsoft
-- **Author** — [Kaiky Vinicius dos Santos](https://github.com/kaikyvinicius)
+- **Author** — [Kaiky Vinicius dos Santos](https://github.com/Kaiky-Santos-BR)
 
 ---
 
