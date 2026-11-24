@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/visual-studio-marketplace/v/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
-[![License](https://img.shields.io/github/license/Kaiky-Santos-BR/vscode-xournalpp-sync)](https://github.com/Kaiky-Santos-BR/vscode-xournalpp-sync/blob/main/LICENSE](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)(LICENSE)
 
 **Seamless integration between Xournal++ and VS Code** — Automatic PDF export, quick actions, and a notes explorer. Inspired by the [Obsidian Xournal++ plugin](https://github.com/jonjampen/obsidian-xournalpp).
 
