@@ -232,8 +232,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## 💬 Support
 
-- **Issues**: [GitHub Issues](https://github.com/kaikyvinicius/vscode-xournalpp-sync/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/kaikyvinicius/vscode-xournalpp-sync/discussions)
 - **Xournal++ Issues**: [xournalpp/xournalpp](https://github.com/xournalpp/xournalpp/issues)
 
 ---
