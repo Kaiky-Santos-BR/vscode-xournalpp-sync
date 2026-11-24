@@ -1,7 +1,7 @@
 # Xournal++ Sync for VS Code
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/KaikySantosBR.kaiky-xournalpp-pdf)](https://marketplace.visualstudio.com/items?itemName=KaikySantosBR.kaiky-xournalpp-pdf)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/KaikySantosBR.kaiky-xournalpp-pdf)](https://marketplace.visualstudio.com/items?itemName=KaikySantosBR.kaiky-xournalpp-pdf)
 [![Rating](https://img.shields.io/visual-studio-marketplace/r/kaikyvinicius.vscode-xournalpp-sync)](https://marketplace.visualstudio.com/items?itemName=kaikyvinicius.vscode-xournalpp-sync)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
