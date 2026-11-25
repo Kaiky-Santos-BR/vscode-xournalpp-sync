@@ -4,6 +4,28 @@
 [![Status](https://img.shields.io/badge/status-currently%20active-brightgreen)](https://marketplace.visualstudio.com/items?itemName=KaikySantosBR.kaiky-xournalpp-pdf)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24544840.svg)](https://doi.org/10.5281/zenodo.24544840)
+## 📚 Technical-Scientific Publication
+
+The software architecture, event-driven pipeline (`FileSystemWatcher`, 500 ms debouncing, concurrency control, and exponential backoff retries), and cross-platform validation of this project are formally documented in the following open-access technical report archived on Zenodo:
+
+- **Title:** *Xournal++ Sync for VS Code: Integração Contínua e Sincronização Automatizada de Anotações Manuscritas no Ambiente de Desenvolvimento*
+- **Author:** Kaiky Vinicius dos Santos
+- **DOI:** [10.5281/zenodo.24544840](https://doi.org/10.5281/zenodo.24544840)
+- **Full Text (Zenodo):** [https://zenodo.org/records/24544840](https://zenodo.org/records/24544840)
+
+### Citation (BibTeX)
+
+```bibtex
+@techreport{santos2026xournalpp,
+  author       = {Santos, Kaiky Vinicius dos},
+  title        = {{Xournal++ Sync for VS Code: Integração Contínua e Sincronização Automatizada de Anotações Manuscritas no Ambiente de Desenvolvimento}},
+  year         = {2026},
+  month        = nov,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.24544840},
+  url          = {[https://zenodo.org/records/24544840](https://zenodo.org/records/24544840)}
+}
 **Seamless integration between Xournal++ and VS Code** — Automatic PDF export, quick actions, and a notes explorer. Inspired by the [Obsidian Xournal++ plugin](https://github.com/jonjampen/obsidian-xournalpp).
 
 **Author:** [Kaiky Vinicius dos Santos](https://github.com/Kaiky-Santos-BR)
